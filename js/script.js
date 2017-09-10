@@ -20,7 +20,8 @@ $(document).ready(function(){
         $('#loadingImage').show();
         $.ajax({
           type: 'GET',
-          url: 'http://localhost/api/index.php',
+          //url: 'http://localhost/api/index.php',
+            url:'https://jsonplaceholder.typicode.com/posts',
             cache: false,
             dataType: "json",
             success: function(data) {
